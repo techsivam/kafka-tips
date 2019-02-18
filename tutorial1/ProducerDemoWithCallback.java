@@ -18,7 +18,7 @@ public class ProducerDemoWithCallback {
     final Logger log = LoggerFactory.getLogger(ProducerDemoWithCallback.class);
 
     Properties properties = new Properties();
-    String bootstramServer = "13.232.174.61:9092";
+    String bootstramServer = "bootstramServerIP:9092";
     properties.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstramServer);
     properties
         .setProperty(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());

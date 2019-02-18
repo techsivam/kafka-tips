@@ -19,7 +19,7 @@ public class ConsumerDemoGroups {
 
     final Logger log = LoggerFactory.getLogger(ConsumerDemoGroups.class);
 
-    String bootstramServer = "13.232.174.61:9092";
+    String bootstramServer = "bootstramServerIP:9092";
     String topic="mytopic1";
     String groupid="my-third-application";
 
