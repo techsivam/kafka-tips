@@ -81,7 +81,7 @@ public class TwitterProducer {
 
   private KafkaProducer<String,String> createKafaProducer() {
     Properties properties = new Properties();
-    String bootstramServer = "13.232.174.61:9092";
+    String bootstramServer = "bootstramServerIP:9092";
     properties.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstramServer);
     properties.setProperty(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
     properties.setProperty(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
@@ -113,7 +113,7 @@ public class TwitterProducer {
 
 /** Declare the host you want to connect to, the endpoint, and authentication (basic auth or oauth) */
    // Hosts hosebirdHosts = new HttpHosts(Constants.STREAM_HOST);
-    //String bootstrapServers = "13.232.174.61:9092";
+    //String bootstrapServers = "bootstramServerIP:9092";
 
     Hosts hosebirdHosts = new HttpHosts(Constants.STREAM_HOST);
     StatusesFilterEndpoint hosebirdEndpoint = new StatusesFilterEndpoint();
